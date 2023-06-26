@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <a target="_blank" href="http://localhost:3001" style="color: white; position: relative; top: 50; font-size: 20px;"> LISTA DE PRODUCTOS EN FORMATO JSON</a>
+    <main>
+        <div class="inputsContainer">
+            <div>
+                <input id="deleteInput" placeholder="Ingrese ID para borrar" type="text">
+                <button class="delete">🗑</button>
+                <button class="update" >✍</button>
+            </div>
+            <input class="input" name="name" placeholder="Nombre" type="text"><input class="input" name="price" placeholder='precio' type="number"><input class="input" name="stock" placeholder="stock" type="number">
+           
+        </div>
+        <div class="card">
+            <div>
+                <img src="https://st4.depositphotos.com/14953852/22772/v/600/depositphotos_227725020-stock-illustration-no-image-available-icon-flat.jpg" id="imageRender">
+            </div>
+            <div class="footer">
+                <input id="uploader" type="file">
+                <progress id="ProgressBar" value="0" max="100"></progress>
+            </div>
+        </div>
+        <div><button id="sendDataButton">Crear</button></div>
+        
+    </main>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
