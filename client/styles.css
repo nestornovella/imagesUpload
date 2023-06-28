@@ -3,24 +3,28 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-align: center;
 }
 
 
 body{
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background-color: rgb(29, 29, 29);
     color: white;
+
 }
 
 main{
     
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 90vh;
-    padding: 0px 10vw;
+
+    padding: 0px 5vw;
 }
 
 
@@ -40,8 +44,8 @@ button:hover{
 }
 
 .card{
-    margin: auto;
-    margin-top: ;
+    
+
     height: 50vh;
     width: 60vh;
     border: white solid 1px;
